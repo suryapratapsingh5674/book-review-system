@@ -14,7 +14,7 @@ export const mockBooks: Book[] = [
     author: 'Matt Haig',
     genre: ['Fantasy', 'Contemporary'],
     summary: 'Between life and death there is a library, and within that library, the shelves go on forever. Every book provides a chance to try another life you could have lived. To see how things would be if you had made other choices... Would you have done anything different, if you had the chance to undo your regrets?',
-    coverImage: 'https://placehold.co/300x450.png', // data-ai-hint will be added by BookCard/BookDetailsPage
+    coverImage: 'https://m.media-amazon.com/images/I/718Q61qxGSL._UF1000,1000_QL80_.jpg', // data-ai-hint will be added by BookCard/BookDetailsPage
     averageRating: 4.5,
     featured: true,
     aiInsight: 'Readers who enjoyed this book often explore themes of regret, second chances, and philosophical questions about life choices.',
@@ -26,7 +26,7 @@ export const mockBooks: Book[] = [
     author: 'Andy Weir',
     genre: ['Science Fiction', 'Thriller'],
     summary: 'Ryland Grace is the sole survivor on a desperate, last-chance mission—and if he fails, humanity and the earth itself will perish. Except that right now, he doesn’t know that. He can’t even remember his own name, let alone the nature of his assignment or how to complete it.',
-    coverImage: 'https://placehold.co/300x450.png', // data-ai-hint will be added by BookCard/BookDetailsPage
+    coverImage: 'https://m.media-amazon.com/images/I/81zD9kaVW9L.jpg', // data-ai-hint will be added by BookCard/BookDetailsPage
     averageRating: 4.8,
     featured: true,
     aiInsight: 'Fans of hard science fiction, witty protagonists, and interstellar problem-solving will find this novel highly engaging.',
@@ -38,7 +38,7 @@ export const mockBooks: Book[] = [
     author: 'Kazuo Ishiguro',
     genre: ['Science Fiction', 'Literary Fiction'],
     summary: 'Klara, an Artificial Friend with outstanding observational qualities, watches carefully the behavior of those who come in to browse, and of those who pass on the street outside. She remains hopeful a customer will soon choose her.',
-    coverImage: 'https://placehold.co/300x450.png', // data-ai-hint will be added by BookCard/BookDetailsPage
+    coverImage: 'https://s3.amazonaws.com/thumbnails.thecrimson.com/photos/2021/03/15/213937_1349196.jpg.657x1000_q95_crop-smart_upscale.jpg', // data-ai-hint will be added by BookCard/BookDetailsPage
     averageRating: 4.2,
     featured: false,
     aiInsight: 'This novel appeals to readers interested in artificial intelligence, human connection, and subtle dystopian undertones.',
@@ -50,7 +50,7 @@ export const mockBooks: Book[] = [
     author: 'Brit Bennett',
     genre: ['Historical Fiction', 'Family Saga'],
     summary: 'The Vignes twin sisters will always be identical. But after growing up together in a small, southern black community and running away at age sixteen, it\'s not justthe shape of their daily lives that is different as adults, it\'s everything: their families, their communities, their racial identities.',
-    coverImage: 'https://placehold.co/300x450.png', // data-ai-hint will be added by BookCard/BookDetailsPage
+    coverImage: 'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1577090827l/51791252.jpg', // data-ai-hint will be added by BookCard/BookDetailsPage
     averageRating: 4.6,
     featured: true,
     aiInsight: 'This book resonates with those who appreciate multi-generational stories exploring identity, race, and family secrets.',
@@ -62,7 +62,7 @@ export const mockBooks: Book[] = [
     author: 'James Clear',
     genre: ['Self-Help', 'Productivity'],
     summary: 'An easy and proven way to build good habits and break bad ones. James Clear, one of the world\'s leading experts on habit formation, reveals practical strategies that will teach you exactly how to form good habits, break bad ones, and master the tiny behaviors that lead to remarkable results.',
-    coverImage: 'https://placehold.co/300x450.png', // data-ai-hint will be added by BookCard/BookDetailsPage
+    coverImage: 'https://m.media-amazon.com/images/I/81F90H7hnML.jpg', // data-ai-hint will be added by BookCard/BookDetailsPage
     averageRating: 4.9,
     featured: false,
     aiInsight: 'A must-read for individuals seeking actionable advice on personal development and achieving long-term goals through small changes.',
@@ -74,7 +74,7 @@ export const mockBooks: Book[] = [
     author: 'Madeline Miller',
     genre: ['Historical Fiction', 'Mythology', 'LGBTQ+'],
     summary: 'A tale of gods, kings, immortal fame, and the human heart, The Song of Achilles is a dazzling literary feat that brilliantly reimagines Homer’s enduring masterwork, The Iliad. An action-packed adventure, an epic love story, a marvel!',
-    coverImage: 'https://placehold.co/300x450.png', // data-ai-hint will be added by BookCard/BookDetailsPage
+    coverImage: 'https://m.media-amazon.com/images/I/81msb6gUBTL.jpg', // data-ai-hint will be added by BookCard/BookDetailsPage
     averageRating: 4.7,
     aiInsight: 'Perfect for readers who love mythological retellings with deep emotional focus and compelling character relationships.',
     reviewsCount: 0,
