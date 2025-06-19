@@ -1,3 +1,4 @@
+
 "use client"; // For hooks like useState, useEffect
 
 import { useEffect, useState, useCallback, useTransition } from 'react';
@@ -46,6 +47,19 @@ export default function BookDetailsPage() {
     fetchBookData();
   }, [fetchBookData]);
 
+  // Generate a hint based on book title or genre for better AI image suggestions
+  const generateAiHint = (currentBook: Book | null): string => {
+    if (!currentBook) return "book cover";
+    if (currentBook.title.toLowerCase().includes("library")) return "library fantasy detail";
+    if (currentBook.title.toLowerCase().includes("hail mary")) return "astronaut space detail";
+    if (currentBook.title.toLowerCase().includes("klara")) return "robot sun detail";
+    if (currentBook.title.toLowerCase().includes("vanishing")) return "sisters silhouette detail";
+    if (currentBook.title.toLowerCase().includes("atomic habits")) return "brain gears detail";
+    if (currentBook.title.toLowerCase().includes("achilles")) return "greek warrior detail";
+    if (currentBook.genre.length > 0) return currentBook.genre[0].toLowerCase().replace(/\s+/g, '') + " detail";
+    return "book cover detail"; // fallback
+  }
+
   if (isLoading || !book && bookId) { // Show loader if initial book load is pending OR if bookId exists but book is not yet fetched
     return (
       <div className="flex justify-center items-center min-h-[calc(100vh-200px)]">
@@ -75,7 +89,7 @@ export default function BookDetailsPage() {
               height={600}
               className="w-full h-auto object-cover md:rounded-l-lg"
               priority // Prioritize loading of the main book cover
-              data-ai-hint="book cover detail"
+              data-ai-hint={generateAiHint(book)}
             />
           </div>
           <div className="md:w-2/3">

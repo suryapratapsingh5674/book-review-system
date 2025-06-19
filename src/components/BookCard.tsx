@@ -1,3 +1,4 @@
+
 import type { Book } from '@/lib/types';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -11,17 +12,29 @@ interface BookCardProps {
 }
 
 export default function BookCard({ book }: BookCardProps) {
+  // Generate a hint based on book title or genre for better AI image suggestions
+  const generateAiHint = (book: Book): string => {
+    if (book.title.toLowerCase().includes("library")) return "library fantasy";
+    if (book.title.toLowerCase().includes("hail mary")) return "astronaut space";
+    if (book.title.toLowerCase().includes("klara")) return "robot sun";
+    if (book.title.toLowerCase().includes("vanishing")) return "sisters silhouette";
+    if (book.title.toLowerCase().includes("atomic habits")) return "brain gears";
+    if (book.title.toLowerCase().includes("achilles")) return "greek warrior";
+    if (book.genre.length > 0) return book.genre[0].toLowerCase().replace(/\s+/g, ''); // first genre
+    return "book cover"; // fallback
+  }
+
   return (
     <Link href={`/books/${book.id}`} className="group block" aria-label={`View details for ${book.title}`}>
       <Card className="h-full flex flex-col overflow-hidden hover:shadow-xl transition-shadow duration-300 ease-in-out rounded-lg">
         <CardHeader className="p-0 relative">
           <Image
-            src={book.coverImage}
+            src={book.coverImage} // Base URL from mockData
             alt={`Cover of ${book.title}`}
             width={300}
             height={450}
             className="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-300 ease-in-out"
-            data-ai-hint="book cover"
+            data-ai-hint={generateAiHint(book)}
           />
         </CardHeader>
         <CardContent className="p-4 flex-grow">
